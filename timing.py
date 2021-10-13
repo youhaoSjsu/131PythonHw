@@ -19,9 +19,22 @@ def calculate_time(timingFunc):
                --------
                Total time 2.0081357955932617
                """
-    b_time = time.time()
-    timingFunc()
-    e_time = time.time()
-    result = e_time - b_time
-    print("Total time " + str(result))
+    def wrapper():
+        # store begin time
+        b_time = time.time()
+        timingFunc()
+        # store end time
+        e_time = time.time()
+        # time is end time - begin time
+        result = e_time - b_time
+        print("Total time " + str(result))
 
+    return wrapper()
+
+
+# ======== testing=======
+def func():
+    time.sleep(2)
+
+
+calculate_time(func)
