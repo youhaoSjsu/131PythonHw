@@ -32,9 +32,7 @@ def calculate_time(timingFunc):
     return wrapper()
 
 
-# ======== testing=======
-def func():
-    time.sleep(2)
 
 
-calculate_time(func)
+
+
