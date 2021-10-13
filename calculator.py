@@ -74,3 +74,4 @@ def calculator(number1, number2, operator):
     print(result)
 
 
+parse_input()
