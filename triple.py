@@ -1,6 +1,6 @@
-def triple(func):
+def tripler(func):
     """
-    #                triple
+    #                tripler
     #
     #                This decorator will call the function that this function is used on three times.
     #                Parameters
