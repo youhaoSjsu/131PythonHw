@@ -71,7 +71,3 @@ def parse_input():
     calculator(number1, number2, strList[1])
 
 
-
-
-
-parse_input()
