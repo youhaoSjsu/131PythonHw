@@ -1,3 +1,4 @@
+
 def tripler(func):
     """
     #                tripler
@@ -30,4 +31,8 @@ def tripler(func):
     return wrapper()
 
 
+def printH():
+    print("hello world")
 
+
+tripler(printH)
