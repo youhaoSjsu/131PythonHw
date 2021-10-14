@@ -1,12 +1,12 @@
-#!/usr/bin/python3
-def multiply_list():
+def multiply_list(inputList):
     """
         #                multiply_list
         #
         #                this function will multiply all of the elements in an input list.
         #               parameter:
         #                ----------
-        #               none
+        #                inputList: list
+        #                A list which contain some numbers are ready to be multiply
         #
         #                Returns
         #                -------
@@ -18,16 +18,14 @@ def multiply_list():
         #                return: 42
         #
         #                """
-    inputStr = input()
-    inputList = inputStr.split(",")
 
-    product = 1.0
+    product = 1
     for i in inputList:
         try:
-            float(i) + 0
+            i + 0
         except TypeError:
             return False
         else:
-            product *= float(i)
-    print(product)
+            product *= i
+
     return product
