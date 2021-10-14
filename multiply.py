@@ -19,17 +19,13 @@ def multiply_list(inputList):
         #
         #                """
 
-    product = 1.0
+    product = 1
     for i in inputList:
         try:
-            float(i) + 0
+            i + 0
         except TypeError:
             return False
         else:
-            product *= float(i)
-    print(product)
+            product *= i
+
     return product
-
-
-inputStr = input()
-aList = inputStr.split(",")
