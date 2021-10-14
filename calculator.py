@@ -37,8 +37,11 @@ def calculator(number1, number2, operator):
         else:
             result = number1 / number2
     elif operator == "//":
-        result = int(number1) / int(number2)
-        result = int(result)
+        if number1 == 0:
+            return False
+        else:
+            result = int(number1) / int(number2)
+            result = int(result)
     elif operator == "**":
         result = math.pow(number1, number2)
     else:
@@ -77,5 +80,4 @@ def parse_input():
     except ValueError:
         return False
     calculator(number1, number2, strList[1])
-
 
