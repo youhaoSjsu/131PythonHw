@@ -32,12 +32,12 @@ def calculator(number1, number2, operator):
     elif operator == "*":
         result = number1 * number2
     elif operator == "/":
-        if number1 == 0:
+        if number2 == 0:
             return False
         else:
             result = number1 / number2
     elif operator == "//":
-        if number1 == 0:
+        if number2 == 0:
             return False
         else:
             result = int(number1) / int(number2)
