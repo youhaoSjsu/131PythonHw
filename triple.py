@@ -19,13 +19,16 @@ def tripler(func):
     #                hello world
     #                hello world
     #                """
-    # firstname calling
-    func()
-    # secondTime calling
-    func()
-    # thridTime calling
-    func()
 
+    def wrapper():
+        # firstname calling
+        func()
+        # secondTime calling
+        func()
+        # thridTime calling
+        func()
+
+    return wrapper
 
 
 def printH():

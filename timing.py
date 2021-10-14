@@ -29,7 +29,7 @@ def calculate_time(timingFunc):
         result = e_time - b_time
         print("Total time " + str(result))
 
-    return wrapper()
+    return wrapper
 
 
 
