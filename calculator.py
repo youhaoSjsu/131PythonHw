@@ -37,7 +37,8 @@ def calculator(number1, number2, operator):
         result = math.pow(number1, number2)
     else:
         return False
-    print(5)
+    print(result)
+    return result
 
 def parse_input():
     """
