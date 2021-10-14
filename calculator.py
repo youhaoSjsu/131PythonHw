@@ -1,4 +1,6 @@
 import math
+
+
 def calculator(number1, number2, operator):
     """
             make calculation
@@ -30,15 +32,20 @@ def calculator(number1, number2, operator):
     elif operator == "*":
         result = number1 * number2
     elif operator == "/":
-        result = number1 / number2
+        if number1 == 0:
+            return False
+        else:
+            result = number1 / number2
     elif operator == "//":
         result = int(number1) / int(number2)
+        result = int(result)
     elif operator == "**":
         result = math.pow(number1, number2)
     else:
         return False
     print(result)
     return result
+
 
 def parse_input():
     """
